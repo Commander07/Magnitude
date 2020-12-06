@@ -77,10 +77,14 @@ $ python3 editor.py
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change. Feel free to create a fork and use the code.
 
 ## Resources
+
 ---
+
 - [Online Documentation](about:blank) for official documentation.
 
 ## Trello links:
+
+---
 
 - [Magnitude Editor](https://trello.com/b/HAzvgW2Y/magnitude-editor)
 - [Magnitude Engine](https://trello.com/b/d4JmpTeT/magnitude-engine)
