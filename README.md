@@ -1,6 +1,6 @@
 <p align=center>
 
-  <img height="128px" src="https://user-images.githubusercontent.com/45269106/97458816-5f71f200-193b-11eb-9014-b6f911c24d81.png"/>
+  <img height="128px" src="https://user-images.githubusercontent.com/45269106/101291518-b35cda00-3809-11eb-82e5-95fb988557ab.png"/>
 
   <br>
   <span>Magnitude is an open-source game engine and editor written with <a href="https://github.com/hoffstadt/DearPyGui">Dear PyGui</a> that lets you easily create game using <a href="https://python.org">Python3</a>.</span>
@@ -26,10 +26,10 @@
 
 ```console
 # clone the repo
-$ git clone https://github.com/Commander07/sokobot.git
+$ git clone https://github.com/Commander07/magnitude.git
 
-# change the working directory to sokobot
-$ cd sokobot
+# change the working directory to magnitude
+$ cd magnitude
 
 # create and activate python environment
 $ python3 -m venv bot-env
@@ -43,10 +43,10 @@ $ python3 -m pip install -r requirements.txt
 
 ```console
 # clone the repo
-$ git clone https://github.com/Commander07/sokobot.git
+$ git clone https://github.com/Commander07/magnitude.git
 
-# change the working directory to sokobot
-$ cd sokobot
+# change the working directory to magnitude
+$ cd magnitude
 
 # create and activate python environment
 $ python3 -m venv bot-env
@@ -56,31 +56,31 @@ $ source bot-env/bin/activate
 $ python3 -m pip install -r requirements.txt
 ```
 
-## Usage
+## Usage (Editor)
 
 ### Windows
 
 ```console
-# create a .env file and add your bot token as the variable TOKEN
-$ notepad .env
-
-# start bot
-$ python bot.py
+# start editor
+$ python3 editor.py
 ```
 
 ### Linux
 
 ```console
-# create a .env file and add your bot token as the variable TOKEN
-$ nano .env
-
-# start bot
-$ python bot.py
+# start editor
+$ python3 editor.py
 ```
 
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change. Feel free to create a fork and use the code.
+
+## Resources
+---
+- [Online Documentation](about:blank) for official documentation.
+
 ## Trello links:
+
 - [Magnitude Editor](https://trello.com/b/HAzvgW2Y/magnitude-editor)
 - [Magnitude Engine](about:blank)
