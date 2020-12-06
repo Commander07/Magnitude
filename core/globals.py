@@ -10,6 +10,6 @@ te1.add_child(te2)
 te2.add_child(te3)
 ## DEFAULT SCENE
 default_scene = obj.scene(name="default_scene")
-default_scene.entity_list = [te1,te2,te3,te4,te5]
+default_scene.entity_list = [te1, te2, te3, te4, te5]
 ## OTHER
 scenes = {"default_scene":default_scene}
