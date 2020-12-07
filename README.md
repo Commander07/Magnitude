@@ -9,8 +9,8 @@
   <a target="_blank" href="LICENSE" title="License: MIT"><img src="https://img.shields.io/github/license/commander07/Magnitude"></a>
   <!-- <a target="_blank" href="https://sokobot.cf"><img alt="Website" src="https://img.shields.io/website?down_color=red&down_message=DOWN&style=flate&up_color=green&up_message=UP&url=https%3A%2F%2Fsokobot.cf"></a> -->
   <a target="_blank"><img alt="Version" src="https://img.shields.io/badge/dynamic/json?color=green&label=version&prefix=v&query=version&url=https%3A%2F%2Fraw.githubusercontent.com%2FCommander07%2FMagnitude%2Fmain%2Fdata%2Fvalues.json"></a>
-  <a target="_blanck"><img alt="Security Status" src="https://img.shields.io/github/workflow/status/Commander07/Magnitude/CodeQL?label=security%20checks&color=green"></a>
-  <a target="_blanck"><img alt="Build Status" src="https://img.shields.io/github/workflow/status/Commander07/Magnitude/PythonLinter?color=green"></a>
+  <a target="_blanck"><img alt="Security Status" src="https://img.shields.io/github/workflow/status/Commander07/Magnitude/CodeQL?label=security%20checks"></a>
+  <a target="_blanck"><img alt="Build Status" src="https://img.shields.io/github/workflow/status/Commander07/Magnitude/PythonLinter"></a>
 
 </p>
 
