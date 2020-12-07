@@ -3,7 +3,7 @@
   <img height="128px" src="https://user-images.githubusercontent.com/45269106/101291518-b35cda00-3809-11eb-82e5-95fb988557ab.png"/>
 
   <br>
-  <span>Magnitude is an open-source game engine and editor built with <a href="https://github.com/hoffstadt/DearPyGui">Dear PyGui</a> that lets you easily create games using <a href="https://python.org">Python3</a>.</span>
+  <span>Magnitude is an open-source game engine and editor built with <a href="https://github.com/hoffstadt/DearPyGui">Dear PyGui</a> and written in <a href="https://python.org">Python3</a> that lets you easily create games using <a href="https://python.org">Python3</a>.</span>
   <br>
   <a target="_blank" href="https://www.python.org/downloads/" title="Python version"><img src="https://img.shields.io/badge/python-%3E=_3.6-green.svg"></a>
   <a target="_blank" href="LICENSE" title="License: MIT"><img src="https://img.shields.io/github/license/commander07/Magnitude"></a>
