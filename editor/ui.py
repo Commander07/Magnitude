@@ -2,6 +2,7 @@ import dearpygui.core as dpg
 import dearpygui.simple as dpgs
 from pyperclip import copy as pyperclip_copy
 from yaml import load, dump, Loader
+from os import path
 
 from core import globals
 from core import obj
@@ -51,6 +52,22 @@ def open_proj(sender, data):
   dpg.open_file_dialog(extensions=".me_project,.me_scene")
 
 
+def save_file(sender, data):
+  path_ = path.join(data[0], data[1])
+  dpg.set_value("save_file_location", path_)
+  data_ = open(path_, "w")
+  data_.write("")
+
+
+def save_proj(sender, data):
+  ## TODO: serializer
+  if sender == "Save As":
+    dpg.open_file_dialog(extensions=".me_project,.me_scene", callback=save_file)
+  else:
+    data_ = open(dpg.get_value("save_file_location"), "w")
+    data_.write("")
+
+
 def theme_callback(sender, data):
   dpg.set_theme(sender)
 
@@ -87,20 +104,19 @@ def create_entity(sender, data):
 
 
 def new_entity_hierarchy(ent, parent="entities##hierarchy_list"):
-  ## TODO: fix leaf=True styles
   if ent.parent is not None:
     dpg.add_indent(parent=ent.parent.name + "##" + ent.parent.id)
     dpg.add_indent(parent=ent.parent.name + "##" + ent.parent.id)
-    if ent.childs == []: leaf=True
-    else: leaf=False
-    with dpgs.collapsing_header(ent.name + "##" + ent.id, label=ent.name, parent=ent.parent.name + "##" + ent.parent.id, leaf=leaf):
+    if ent.childs == []: bullet=True
+    else: bullet=False
+    with dpgs.collapsing_header(ent.name + "##" + ent.id, label=ent.name, parent=ent.parent.name + "##" + ent.parent.id, bullet=bullet):
       pass
     dpg.unindent(parent=ent.parent.name + "##" + ent.parent.id)
     dpg.unindent(parent=ent.parent.name + "##"+ ent.parent.id)
   else:
-    if ent.childs == []: leaf=True
-    else: leaf=False
-    with dpgs.collapsing_header(ent.name + "##" + ent.id, label=ent.name, parent=parent, leaf=leaf):
+    if ent.childs == []: bullet=True
+    else: bullet=False
+    with dpgs.collapsing_header(ent.name + "##" + ent.id, label=ent.name, parent=parent, bullet=bullet):
       pass
 
 
@@ -109,8 +125,8 @@ with dpgs.window("Main Window", no_title_bar=True, x_pos=0, y_pos=0, no_close=Tr
     with dpgs.menu("File"):
       ## TODO: make all items function
       dpg.add_menu_item("Open", callback=open_proj)
-      dpg.add_menu_item("Save", callback=save_layout)
-      dpg.add_menu_item("Save As", callback=print_me)
+      dpg.add_menu_item("Save", callback=save_proj)
+      dpg.add_menu_item("Save As", callback=save_proj)
 
     with dpgs.menu("Themes"):
       dpg.add_menu_item("Dark", callback=theme_callback)
