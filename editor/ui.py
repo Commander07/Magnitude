@@ -4,8 +4,10 @@ from pyperclip import copy as pyperclip_copy
 from yaml import load, dump, Loader
 from os import path
 
+
 from core import globals
 from core import obj
+from . import platforms
 
 
 class console_log:
@@ -192,7 +194,7 @@ with dpgs.window("Magnitude Console v1.0.0##console", width=500, height=500, x_p
 
 
 def start():
-  ## TODO: set icon to ../assets/logo.png;  fix docking with primary window;  add custom title bar;  add docking layouts
+  ## TODO: set icon to ../assets/logo.cio;  fix docking with primary window;  add custom title bar;  add docking layouts
   dpg.set_theme("Cherry")
   dpg.set_vsync(True)
   dpg.enable_docking(shift_only=False, dock_space=True)
